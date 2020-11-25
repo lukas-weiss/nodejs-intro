@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-intro",
+  "version": "1.0.0",
+  "description": "NodeJS intro example",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "nodejs",
+    "intro",
+    "example"
+  ],
+  "author": "Lukas Weiß",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
