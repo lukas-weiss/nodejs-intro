@@ -1,7 +1,11 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const packageLockFile = path.join(path.resolve(), '../package-lock.json');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const packageLockFile = path.join(__dirname, '../package-lock.json');
 const result = fs.readFile(packageLockFile, {}, (error, data) => {
     if(error) {
         throw error;
@@ -10,3 +14,5 @@ const result = fs.readFile(packageLockFile, {}, (error, data) => {
 });
 
 console.log(result);
+console.log(5+4);
+console.log('another log output');
